@@ -1,9 +1,85 @@
+<!-- BASICS -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>JavaScript</title>
+    <title>JavaScript - Basics</title>
 </head>
 <body>
+    <script>
+        // A useful quick command to see if the JavaScript is working 
+        document.write("Hello, World!");
+
+        
+        // Creating variables
+        // At this point the value of the below variable would be undefined
+        var myvariable;
+
+        // You can define it by any of the following below
+        var myvariable = 5;
+        // or
+        myvariable = 5;
+
+        
+        // Operators
+        // Concatenation
+        var words = "This is";
+        var morewords = " a sentence";
+        var sentence = words + morewords;
+        document.write(sentence);
+
+        // Addition
+        var num1 = 5;
+        var num2 = 3;
+        var total = num1 + num2;
+        document.write(total);
+
+        var total = num1++;
+        // ++ increments the variable. So this is the same as adding one to it
+        // you can also do
+        num1--;
+        ++num1;
+        --num1;
+        // depending on when you want the operation to be evaluated
+
+        // Strings are stored as objects. They have their own internal properties. For example, the length of the string... We can access that by the following
+        var alpha = "ABCDEFG";
+        var length = alpha.length;
+        document.write(length); // Output will 7 because this string has 7 characters
+
+        // String also have methods you can call. Methods are different than properties
+        // One example string method is called substring, which will export a portion of a string
+        var alpha = "ABCDEFG";
+        var result = alpha.substring(3, 6); // going up to sixth index but not including index. 
+        document.write(result); // Output will be DEF
+
+    </script>
     
 </body>
 </html>
+
+<!-- __________________________________________________________________________________________________________________________________________________________________________________ -->
+
+<!-- ARRAYS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript - Arrays</title>
+</head>
+<body>
+    <script>
+        // There are a few ways to create an array
+
+        var a = new Array(7); // in paranthesis defining how much you want to put in the array. In this case, the array will hold 7 items
+        a[0] = "cat";
+        a[1] = "dog";
+        a[2] = 95;
+        a[6] = true;
+
+    </script>
+    
+</body>
+</html>
+
+<!-- https://www.youtube.com/watch?v=Ukg_U3CnJWI left off at 7:17 -->
